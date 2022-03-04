@@ -15,14 +15,20 @@ public class _03_StringBuilder {
     }
     
     public static String reverse(String str) {
-        return null;
+    	StringBuilder nsb = new StringBuilder(str);
+    	nsb.reverse();
+        return nsb.toString();
     }
     
     public static String insert(String str, int index, char newChar) {
-        return null;
+    	StringBuilder nsb = new StringBuilder(str);
+    	nsb.insert(index, newChar);
+        return nsb.toString();
     }
     
     public static String delete(String str, int startIndex, int endIndex) {
-        return null;
+    	StringBuilder nsb = new StringBuilder(str);
+    	nsb.delete(startIndex, endIndex);
+    	return nsb.toString();
     }
 }
